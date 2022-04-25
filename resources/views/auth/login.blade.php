@@ -1,8 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-
-
 <div class="card-body">
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -57,9 +54,7 @@
                             {{ __('Login') }}
                         </button>
                     </div>
-
                 </div>
-
         </div>
     </form>
 </div>
