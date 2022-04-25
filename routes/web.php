@@ -22,8 +22,8 @@ Route::get('/', function () {
     return view('auth.login');
 })->middleware('guest');
 
-Auth::routes();
 
+Auth::routes()->middleware('guest');
 
 
 Route::middleware(['auth'])->group(function(){
