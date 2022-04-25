@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <div class="card-body">
-    <form method="POST" action="{{ route('home') }}">
-        {{ csrf_field() }}
+    <form method="POST" action="{{ route('login') }}">
+         {{ csrf_field() }}
         <div class="form">
 
                 <div id="username-field" class="field-wrapper input">
